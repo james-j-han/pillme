@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:pillme/my_drawer.dart';
 
-class SearchPage extends StatefulWidget {
-  const SearchPage({super.key});
+class MedicationPage extends StatefulWidget {
+  const MedicationPage({super.key});
 
   @override
-  State<SearchPage> createState() => _SearchPageState();
+  State<MedicationPage> createState() => _MedicationPageState();
 }
 
-class _SearchPageState extends State<SearchPage> {
+class _MedicationPageState extends State<MedicationPage> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -17,15 +17,15 @@ class _SearchPageState extends State<SearchPage> {
         padding: const EdgeInsets.only(top: 24.0),
         child: Scaffold(
           backgroundColor: const Color(0xFFEFFCEF),
-            appBar: AppBar(
-              centerTitle: true,
-              title: const Text(
-                'Search',
-                style: TextStyle(
-                  fontSize: 36.0,
-                ),
+          appBar: AppBar(
+            centerTitle: true,
+            title: const Text(
+              'Medication',
+              style: TextStyle(
+                fontSize: 36.0,
               ),
             ),
+          ),
           drawer: const MyDrawer(),
         ),
       ),

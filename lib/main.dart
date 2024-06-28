@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pillme/pages/dashboard_page.dart';
+import 'package:pillme/pages/medication_page.dart';
 import 'package:pillme/pages/search_page.dart';
 
 void main() {
@@ -38,6 +39,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/dashboard': (context) => const DashBoardPage(),
         '/search': (context) => const SearchPage(),
+        '/medication': (context) => const MedicationPage(),
       },
     );
   }

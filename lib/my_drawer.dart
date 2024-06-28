@@ -27,24 +27,30 @@ class MyDrawer extends StatelessWidget {
           ListTile(
             leading: const Icon(Icons.gamepad_rounded),
             title: const Text('Dashboard'),
-            onTap: () {},
+            onTap: () {
+              Navigator.pushReplacementNamed(context, '/dashboard');
+            },
           ),
           ListTile(
             leading: const Icon(Icons.search_rounded),
             title: const Text('Search'),
             onTap: () {
-              Navigator.pushNamed(context, '/search');
+              Navigator.pushReplacementNamed(context, '/search');
             },
           ),
           ListTile(
             leading: const Icon(Icons.alarm),
             title: const Text('Reminders'),
-            onTap: () {},
+            onTap: () {
+              
+            },
           ),
           ListTile(
             leading: const Icon(Icons.medication_rounded),
             title: const Text('Medication'),
-            onTap: () {},
+            onTap: () {
+              Navigator.pushReplacementNamed(context, '/medication');
+            },
           ),
         ],
       ),
