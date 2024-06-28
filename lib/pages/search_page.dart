@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pillme/my_drawer.dart';
 
 class SearchPage extends StatefulWidget {
   const SearchPage({super.key});
@@ -10,6 +11,14 @@ class SearchPage extends StatefulWidget {
 class _SearchPageState extends State<SearchPage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(
+          centerTitle: true,
+          title: const Text('Search'),
+        ),
+        drawer: const MyDrawer(),
+      ),
+    );
   }
 }

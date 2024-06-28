@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pillme/pages/dashboard_page.dart';
+import 'package:pillme/pages/search_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -34,6 +35,10 @@ class MyApp extends StatelessWidget {
         fontFamily: 'Poppins'
       ),
       home: const DashBoardPage(),
+      routes: {
+        '/dashboard': (context) => const DashBoardPage(),
+        '/search': (context) => const SearchPage(),
+      },
     );
   }
 }

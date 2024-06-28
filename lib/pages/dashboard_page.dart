@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pillme/my_drawer.dart';
 
 class DashBoardPage extends StatefulWidget {
   const DashBoardPage({super.key});
@@ -15,6 +16,7 @@ class _DashBoardPageState extends State<DashBoardPage> {
         // Padding for camera cutout on Android
         padding: const EdgeInsets.only(top: 24.0),
         child: Scaffold(
+          backgroundColor: const Color(0xFFEFFCEF),
           appBar: AppBar(
             centerTitle: true,
             title: const Text(
@@ -24,24 +26,7 @@ class _DashBoardPageState extends State<DashBoardPage> {
               ),
             ),
           ),
-          drawer: Drawer(
-            width: 300.0,
-            child: ListView(
-              children: [
-                const DrawerHeader(
-                  decoration: BoxDecoration(
-                    color: Colors.blue,
-                  ),
-                  child: Text('Drawer'),
-                ),
-                ListTile(
-                  leading: const Icon(Icons.gamepad_rounded),
-                  title: const Text('First item'),
-                  onTap: () {},
-                )
-              ],
-            ),
-          ),
+          drawer: const MyDrawer(),
         ),
       ),
     );
